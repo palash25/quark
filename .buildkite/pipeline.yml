@@ -1,3 +1,11 @@
 steps:
-  - label: "Example Test"
-    command: echo "Hello!"
+  - label: "Build amd64"
+    key: build_amd64
+    command: "make"
+    artifact_paths:
+      - "libquark_big.a"
+    agents:
+      image: family/core-ubuntu-2204
+      provider: gcp
+      machineType: n2-standard-2
+
