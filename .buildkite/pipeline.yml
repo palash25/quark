@@ -20,7 +20,7 @@ steps:
       machineType: n2-standard-2
 
   - label: "make docker-cross-arm64"
-    key: make_centos7
+    key: make_docker_cross_arm64
     command: "make docker-cross-arm64"
     artifact_paths:
       - "libquark_big.a"
