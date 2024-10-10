@@ -1,7 +1,7 @@
 steps:
   - label: "make docker"
     key: build_docker
-    command: "make"
+    command: "make docker"
     artifact_paths:
       - "libquark_big.a"
     agents:
